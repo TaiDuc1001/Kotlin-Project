@@ -54,8 +54,10 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@id/service_question"
         app:layout_constraintBottom_toBottomOf="@id/service_question" />
+
     <TextView
         android:id="@+id/service_question"
+        style="@style/Widget.TipTime.TextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/how_was_the_service"
@@ -76,18 +78,21 @@
 
         <RadioButton
             android:id="@+id/option_twenty_percent"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/amazing_service"
             />
         <RadioButton
             android:id="@+id/option_eighteen_percent"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/good_service"
             />
         <RadioButton
             android:id="@+id/option_fifteen_percent"
+            style="@style/Widget.TipTime.CompoundButton.RadioButton"
             android:layout_height="wrap_content"
             android:layout_width="wrap_content"
             android:text="@string/okay_service"
@@ -106,6 +111,7 @@
 
     <com.google.android.material.switchmaterial.SwitchMaterial
         android:id="@+id/round_up_switch"
+        style="Widget.TipTime.CompoundButton.Switch"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:checked="true"
@@ -126,6 +132,7 @@
 
     <TextView
         android:id="@+id/tip_result"
+        style="@style/Widget.TipTime.textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="Tip Amount: $10"
