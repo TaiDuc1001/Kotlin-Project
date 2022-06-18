@@ -1,4 +1,10 @@
 package com.example.affirmations.model
 
-class Affirmation(val stringResourceId: Int) {
+import androidx.annotation.DrawableRes
+import androidx.annotation.StringRes
+
+
+class Affirmation(
+    @StringRes val stringResourceId: Int,
+    @DrawableRes val imageResourceId: Int) {
 }
