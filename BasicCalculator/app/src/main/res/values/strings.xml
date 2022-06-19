@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Basic Calculator</string>
+    <string name="Cal">Cal</string>
+    <string name="open_parentheses"><![CDATA[&#x28;]]></string>
+    <string name="close_parentheses"><![CDATA[&#x29;]]></string>
+    <string name="plus"><![CDATA[&#x2b;]]></string>
+    <string name="minus"><![CDATA[&#x2212;]]></string>
+    <string name="multiplication"><![CDATA[&#xd7;]]></string>
+    <string name="division"><![CDATA[&#xf7;]]></string>
+    <string name="equal"><![CDATA[&#x3d;]]></string>
+    <string name="delete">DELETE</string>
+</resources>
