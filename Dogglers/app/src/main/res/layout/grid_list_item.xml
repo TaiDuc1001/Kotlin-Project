@@ -94,8 +94,8 @@
         <TextView
             android:id="@+id/item_hobbies"
 
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
             android:layout_marginStart="20dp"
 
@@ -130,3 +130,17 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>
+
+<!--    //#=====================================================================#-->
+<!--    //#                               _.-/`)                                #-->
+<!--    //#                              // / / )                               #-->
+<!--    //#                           .=// / / / )                              #-->
+<!--    //#                          //`/ / / / /                               #-->
+<!--    //#                         // /     ` /                                #-->
+<!--    //#                        ||         /                                 #-->
+<!--    //#                         \\       /                                  #-->
+<!--    //#                          ))    .'                                   #-->
+<!--    //#                         //    /                                     #-->
+<!--    //#                              /                                      #-->
+<!--    //#=====================================================================#-->
+
