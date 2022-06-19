@@ -24,7 +24,7 @@
     app:cardElevation="4dp"
     app:cardCornerRadius="4dp">
 
-    <LinearLayout
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:scrollbars="vertical"
@@ -63,8 +63,8 @@
         <TextView
             android:id="@+id/item_name"
 
-            android:layout_width="100sp"
-            android:layout_height="100sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
             android:layout_marginTop="8dp"
             android:layout_marginStart="8dp"
@@ -75,34 +75,31 @@
             app:layout_constraintTop_toBottomOf="@+id/item_image"
             />
 
-<!--        <TextView-->
-<!--            android:id="@+id/item_age"-->
+        <TextView
+            android:id="@+id/item_age"
 
-<!--            android:layout_width="100sp"-->
-<!--            android:layout_height="100sp"-->
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
 
-<!--            android:layout_marginTop="16dp"-->
-<!--            android:layout_marginStart="8dp"-->
-<!--            android:layout_marginBottom="16dp"-->
-<!--            android:textAppearance="?attr/textAppearanceBody1"-->
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="16dp"
+            android:textAppearance="?attr/textAppearanceBody1"
 
 
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@+id/item_name"-->
-<!--            />-->
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/item_name"
+            />
 
         <TextView
             android:id="@+id/item_hobbies"
 
-            android:layout_width="100sp"
-            android:layout_height="100sp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            android:layout_marginStart="20dp"
 
             android:textAppearance="?attr/textAppearanceBody1"
-
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginBottom="8dp"
-
 
 
             app:layout_constraintBottom_toBottomOf="parent"
@@ -130,6 +127,6 @@
 <!--            app:layout_constraintTop_toBottomOf="@+id/item_hobbies"-->
 
 <!--            />-->
-    </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </com.google.android.material.card.MaterialCardView>

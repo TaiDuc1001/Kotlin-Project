@@ -38,7 +38,7 @@
             android:id="@+id/item_image"
 
             android:layout_width="match_parent"
-            android:layout_height="194dp"
+            android:layout_height="300dp"
 
             android:importantForAccessibility="no"
 

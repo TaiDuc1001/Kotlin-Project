@@ -21,6 +21,9 @@ public final class GridListItemBinding implements ViewBinding {
   private final MaterialCardView rootView;
 
   @NonNull
+  public final TextView itemAge;
+
+  @NonNull
   public final TextView itemHobbies;
 
   @NonNull
@@ -29,9 +32,10 @@ public final class GridListItemBinding implements ViewBinding {
   @NonNull
   public final TextView itemName;
 
-  private GridListItemBinding(@NonNull MaterialCardView rootView, @NonNull TextView itemHobbies,
-      @NonNull ImageView itemImage, @NonNull TextView itemName) {
+  private GridListItemBinding(@NonNull MaterialCardView rootView, @NonNull TextView itemAge,
+      @NonNull TextView itemHobbies, @NonNull ImageView itemImage, @NonNull TextView itemName) {
     this.rootView = rootView;
+    this.itemAge = itemAge;
     this.itemHobbies = itemHobbies;
     this.itemImage = itemImage;
     this.itemName = itemName;
@@ -64,6 +68,12 @@ public final class GridListItemBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
+      id = R.id.item_age;
+      TextView itemAge = ViewBindings.findChildViewById(rootView, id);
+      if (itemAge == null) {
+        break missingId;
+      }
+
       id = R.id.item_hobbies;
       TextView itemHobbies = ViewBindings.findChildViewById(rootView, id);
       if (itemHobbies == null) {
@@ -82,7 +92,8 @@ public final class GridListItemBinding implements ViewBinding {
         break missingId;
       }
 
-      return new GridListItemBinding((MaterialCardView) rootView, itemHobbies, itemImage, itemName);
+      return new GridListItemBinding((MaterialCardView) rootView, itemAge, itemHobbies, itemImage,
+          itemName);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
