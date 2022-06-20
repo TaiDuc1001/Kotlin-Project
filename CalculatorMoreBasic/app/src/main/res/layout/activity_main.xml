@@ -11,7 +11,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
+        android:layout_marginTop="160dp"
         android:fontFamily="serif"
         android:text="@string/enter_two_numbers"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
@@ -33,7 +33,7 @@
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
         android:textAlignment="center"
-        android:textColor="#ECE3E3"
+        android:backgroundTint="@color/teal_200"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.505"
         app:layout_constraintStart_toStartOf="parent"
@@ -44,6 +44,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="15"
+        android:textColorHint="@color/grey_dark"
+        android:textColor="#ECE3E3"
         android:layout_marginTop="30dp"
         android:hint="@string/enter_second_number"
         android:importantForAutofill="no"
@@ -59,7 +61,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal"
         android:weightSum="0.15"
         app:layout_constraintTop_toBottomOf="@+id/editTextSecondNumber"
         tools:layout_editor_absoluteX="10dp">
@@ -121,7 +122,7 @@
             app:backgroundTint="@color/teal_200" />
 
         <Button
-            android:id="@+id/clear_btn"
+            android:id="@+id/del_btn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="10dp"

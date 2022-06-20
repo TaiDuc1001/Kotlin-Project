@@ -5,8 +5,11 @@ plugins {
 
 android {
     compileSdk 32
-
+    buildFeatures{
+        viewBinding = true
+    }
     defaultConfig {
+        vectorDrawables.useSupportLibrary = true
         applicationId "com.example.calculatormorebasic"
         minSdk 19
         targetSdk 32

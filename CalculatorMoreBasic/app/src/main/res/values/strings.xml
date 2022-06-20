@@ -11,4 +11,5 @@
     <string name="result">RESULT</string>
     <string name="result_view">RESULT</string>
     <string name="result_of_equation">0.00</string>
+    <string name="equal">&#x3d;</string>
 </resources>
