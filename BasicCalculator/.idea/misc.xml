@@ -4,9 +4,11 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/DUC/AndroidStudioProjects/BasicCalculator/app/src/main/res/drawable/background_drawable.xml" value="0.236" />
+        <entry key="..\:/Users/DUC/AndroidStudioProjects/BasicCalculator/app/src/main/res/drawable/button_style_drawable.xml" value="0.279" />
         <entry key="..\:/Users/DUC/AndroidStudioProjects/BasicCalculator/app/src/main/res/drawable/gradient_drawable.xml" value="0.236" />
+        <entry key="..\:/Users/DUC/AndroidStudioProjects/BasicCalculator/app/src/main/res/drawable/result_values_drawable.xml" value="0.279" />
         <entry key="..\:/Users/DUC/AndroidStudioProjects/BasicCalculator/app/src/main/res/drawable/rounded_corner.xml" value="0.236" />
-        <entry key="..\:/Users/DUC/AndroidStudioProjects/BasicCalculator/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/DUC/AndroidStudioProjects/BasicCalculator/app/src/main/res/layout/activity_main.xml" value="1.0" />
       </map>
     </option>
   </component>

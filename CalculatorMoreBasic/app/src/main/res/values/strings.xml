@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Calculator More Basic</string>
+    <string name="enter_two_numbers">ENTER TWO NUMBERS</string>
+    <string name="enter_first_number">Enter first number</string>
+    <string name="enter_second_number">Enter second number</string>
+    <string name="plus">&#x2b;</string>
+    <string name="minus">&#x2212;</string>
+    <string name="multiply">&#xd7;</string>
+    <string name="division">&#xf7;</string>
+    <string name="clear">&#x7F;</string>
+    <string name="result">RESULT</string>
+    <string name="result_view">RESULT</string>
+    <string name="result_of_equation">0.00</string>
+</resources>
