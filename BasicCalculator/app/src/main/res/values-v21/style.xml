@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.BasicCalculator.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:background">@drawable/button_style_drawable</item>
+<!--        <item name="android:layout_gravity">fill_horizontal</item>-->
+<!--        <item name="android:layout_columnWeight">1</item>-->
+    </style>
+</resources>

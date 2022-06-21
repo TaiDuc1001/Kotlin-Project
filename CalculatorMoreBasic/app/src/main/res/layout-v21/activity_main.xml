@@ -165,7 +165,6 @@
         android:ems="15"
         android:hint="@string/result_of_equation"
         android:importantForAutofill="no"
-        android:inputType="numberDecimal"
         android:textAlignment="center"
         android:layout_marginTop="20dp"
         android:textColor="#ECE3E3"
