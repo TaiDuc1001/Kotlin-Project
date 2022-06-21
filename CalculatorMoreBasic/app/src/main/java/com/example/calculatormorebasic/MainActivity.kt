@@ -7,7 +7,6 @@ import com.example.calculatormorebasic.databinding.ActivityMainBinding
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
-import androidx.core.content.ContextCompat.getSystemService
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -26,7 +25,6 @@ class MainActivity : AppCompatActivity() {
         binding.divisionBtn.setOnClickListener { divideFunc() }
         binding.delBtn.setOnClickListener { delFunc() }
 
-        binding.editTextFirstNumber.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
         binding.editTextSecondNumber.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
     }
 

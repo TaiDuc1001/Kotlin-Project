@@ -32,6 +32,7 @@
         android:hint="@string/enter_first_number"
         android:importantForAutofill="no"
         android:inputType="numberDecimal"
+        android:nextFocusDown="@id/editTextSecondNumber"
         android:textAlignment="center"
         android:backgroundTint="@color/white"
         android:textColor="#ECE3E3"
