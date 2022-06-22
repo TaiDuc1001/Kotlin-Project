@@ -1,13 +1,13 @@
 <resources>
     <string name="app_name">Basic Calculator</string>
     <string name="Cal">Cal</string>
-    <string name="open_parentheses"><![CDATA[&#x28;]]></string>
-    <string name="close_parentheses"><![CDATA[&#x29;]]></string>
-    <string name="plus"><![CDATA[&#x2b;]]></string>
-    <string name="minus"><![CDATA[&#x2212;]]></string>
-    <string name="multiplication"><![CDATA[&#xd7;]]></string>
-    <string name="division"><![CDATA[&#xf7;]]></string>
-    <string name="equal"><![CDATA[&#x3d;]]></string>
+    <string name="open_parentheses">&#x28;</string>
+    <string name="close_parentheses">&#x29;</string>
+    <string name="plus">&#x2b;</string>
+    <string name="minus">&#x2212;</string>
+    <string name="multiplication">&#xd7;</string>
+    <string name="division">&#xf7;</string>
+    <string name="equal">&#x3d;</string>
     <string name="delete">&#x232b;</string>
     <string name="numZero">0</string>
     <string name="numOne">1</string>
@@ -20,4 +20,6 @@
     <string name="numEight">8</string>
     <string name="numNine">9</string>
     <string name="dot">.</string>
+    <string name="clear">C</string>
+    <string name="hint">0.00</string>
 </resources>

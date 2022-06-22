@@ -18,6 +18,7 @@
 
         android:backgroundTint="@color/white"
         android:ems="15"
+        android:inputType="numberDecimal"
 
         android:importantForAutofill="no"
         android:textAlignment="textEnd"
@@ -28,7 +29,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="0.00" />
+        android:hint="@string/hint" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
@@ -51,7 +52,7 @@
         app:useDefaultMargins="false">
 
         <Button
-            android:id="@+id/button5"
+            android:id="@+id/delete_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:text="@string/delete"
 
@@ -63,11 +64,11 @@
             app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button6"
+            android:id="@+id/clear_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
-            android:text="@string/Cal"
+            android:text="@string/clear"
             android:textSize="25sp"
 
 
@@ -78,7 +79,7 @@
 
 
         <Button
-            android:id="@+id/button7"
+            android:id="@+id/open_parentheses_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             android:text="@string/open_parentheses"
@@ -90,19 +91,18 @@
             app:layout_row="1" />
 
         <Button
-            android:id="@+id/button8"
+            android:id="@+id/close_parentheses_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
-            app:layout_rowWeight="1"
             android:text="@string/close_parentheses"
 
 
-
             app:layout_column="2"
-            app:layout_row="1" />
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button9"
+            android:id="@+id/division_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
@@ -113,7 +113,7 @@
             app:layout_row="1" />
 
         <Button
-            android:id="@+id/button10"
+            android:id="@+id/num_seven_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
@@ -126,7 +126,7 @@
             app:layout_row="2" />
 
         <Button
-            android:id="@+id/button11"
+            android:id="@+id/num_eight_btn"
             app:layout_rowWeight="1"
 
             style="@style/Widget.BasicCalculator.Button"
@@ -137,28 +137,27 @@
             app:layout_row="2" />
 
         <Button
-            android:id="@+id/button12"
+            android:id="@+id/num_nine_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
-            app:layout_rowWeight="1"
             android:text="@string/numNine"
-
             app:layout_column="2"
-            app:layout_row="2" />
+
+            app:layout_row="2"
+            app:layout_rowWeight="1" />
 
         <Button
-            android:id="@+id/button13"
+            android:id="@+id/multiplication_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
             android:text="@string/multiplication"
 
-            android:layout_height="wrap_content"
             app:layout_column="3"
             app:layout_row="2" />
 
         <Button
-            android:id="@+id/button14"
+            android:id="@+id/num_four_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
@@ -170,7 +169,7 @@
             app:layout_row="3" />
 
         <Button
-            android:id="@+id/button15"
+            android:id="@+id/num_five_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
@@ -180,7 +179,7 @@
             app:layout_row="3" />
 
         <Button
-            android:id="@+id/button16"
+            android:id="@+id/num_six_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
@@ -190,7 +189,7 @@
             app:layout_row="3" />
 
         <Button
-            android:id="@+id/button17"
+            android:id="@+id/minus_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
@@ -200,7 +199,7 @@
             app:layout_row="3" />
 
         <Button
-            android:id="@+id/button18"
+            android:id="@+id/num_one_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_marginStart="10dp"
             app:layout_rowWeight="1"
@@ -213,7 +212,7 @@
             app:layout_row="4" />
 
         <Button
-            android:id="@+id/button19"
+            android:id="@+id/num_two_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
@@ -224,7 +223,7 @@
             app:layout_row="4" />
 
         <Button
-            android:id="@+id/button20"
+            android:id="@+id/num_three_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
@@ -234,7 +233,7 @@
             app:layout_row="4" />
 
         <Button
-            android:id="@+id/button21"
+            android:id="@+id/plus_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
@@ -243,7 +242,7 @@
             app:layout_row="4" />
 
         <Button
-            android:id="@+id/button22"
+            android:id="@+id/num_zero_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="186dp"
 
@@ -259,7 +258,7 @@
             app:layout_row="5" />
 
         <Button
-            android:id="@+id/button24"
+            android:id="@+id/dot_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
@@ -269,7 +268,7 @@
             app:layout_row="5" />
 
         <Button
-            android:id="@+id/button25"
+            android:id="@+id/calculate_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
