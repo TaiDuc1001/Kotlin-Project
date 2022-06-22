@@ -19,10 +19,8 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val numberInEditText1 = binding.editTextFirstNumber.text.toString()
-        val numberInEditText2 = binding.editTextSecondNumber.text.toString()
 
-        binding.plusBtn.setOnClickListener { plusFunc(numberInEditText1, numberInEditText2) }
+        binding.plusBtn.setOnClickListener { plusFunc() }
         binding.minusBtn.setOnClickListener { minusFunc() }
         binding.multiplyBtn.setOnClickListener { multiFunc() }
         binding.divisionBtn.setOnClickListener { divideFunc() }
@@ -31,7 +29,9 @@ class MainActivity : AppCompatActivity() {
         binding.editTextSecondNumber.setOnKeyListener { view, keyCode, _ -> handleKeyEvent(view, keyCode) }
     }
 
-    private fun plusFunc(numberInEditText1: String, numberInEditText2: String ) {
+    private fun plusFunc() {
+        val numberInEditText1 = binding.editTextFirstNumber.text.toString()
+        val numberInEditText2 = binding.editTextSecondNumber.text.toString()
         if (numberInEditText1.isNotEmpty() && numberInEditText2.isNotEmpty()) {
             var result = (numberInEditText1.toDouble() + numberInEditText2.toDouble()).toString()
             binding.resultOfEquation.setText(result)
