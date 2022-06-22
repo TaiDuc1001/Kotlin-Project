@@ -8,5 +8,16 @@
     <string name="multiplication"><![CDATA[&#xd7;]]></string>
     <string name="division"><![CDATA[&#xf7;]]></string>
     <string name="equal"><![CDATA[&#x3d;]]></string>
-    <string name="delete">DELETE</string>
+    <string name="delete">&#x232b;</string>
+    <string name="numZero">0</string>
+    <string name="numOne">1</string>
+    <string name="numTwo">2</string>
+    <string name="numThree">3</string>
+    <string name="numFour">4</string>
+    <string name="numFive">5</string>
+    <string name="numSix">6</string>
+    <string name="numSeven">7</string>
+    <string name="numEight">8</string>
+    <string name="numNine">9</string>
+    <string name="dot">.</string>
 </resources>

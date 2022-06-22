@@ -32,51 +32,60 @@
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+
         android:layout_marginStart="10dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="40dp"
+
         app:columnCount="4"
-        app:layout_constrainedWidth="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHeight="match_constraint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/result_value"
-        app:layout_constraintWidth="wrap_content"
         app:rowCount="6"
-        app:useDefaultMargins="true">
+        app:layout_constraintHeight="match_constraint"
+        app:layout_constraintWidth="wrap_content"
+        app:useDefaultMargins="false">
 
         <Button
             android:id="@+id/button5"
             style="@style/Widget.BasicCalculator.Button"
+            android:text="@string/delete"
+
             android:layout_width="182dp"
-            android:layout_height="wrap_content"
             android:layout_marginTop="7dp"
             app:layout_column="2"
             app:layout_columnSpan="2"
-            app:layout_row="0" />
+            app:layout_row="0"
+            app:layout_rowWeight="1" />
 
         <Button
             android:id="@+id/button6"
             style="@style/Widget.BasicCalculator.Button"
-
-
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
+            android:text="@string/Cal"
+            android:textSize="25sp"
 
-            android:layout_height="wrap_content"
+
+            app:backgroundTint="@color/purple_700"
+            app:layout_rowWeight="1"
             app:layout_column="0"
             app:layout_row="1" />
+
 
         <Button
             android:id="@+id/button7"
             style="@style/Widget.BasicCalculator.Button"
-
             android:layout_width="wrap_content"
+            android:text="@string/open_parentheses"
 
-            android:layout_height="wrap_content"
+
+
+            app:layout_rowWeight="1"
             app:layout_column="1"
             app:layout_row="1" />
 
@@ -84,8 +93,11 @@
             android:id="@+id/button8"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/close_parentheses"
 
-            android:layout_height="wrap_content"
+
+
             app:layout_column="2"
             app:layout_row="1" />
 
@@ -93,27 +105,34 @@
             android:id="@+id/button9"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/division"
 
-            android:layout_height="wrap_content"
+
             app:layout_column="3"
             app:layout_row="1" />
 
         <Button
             android:id="@+id/button10"
             style="@style/Widget.BasicCalculator.Button"
-
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/numSeven"
 
-            android:layout_height="wrap_content"
+
+
             app:layout_column="0"
             app:layout_row="2" />
 
         <Button
             android:id="@+id/button11"
+            app:layout_rowWeight="1"
+
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            android:text="@string/numEight"
 
-            android:layout_height="wrap_content"
             app:layout_column="1"
             app:layout_row="2" />
 
@@ -121,8 +140,9 @@
             android:id="@+id/button12"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/numNine"
 
-            android:layout_height="wrap_content"
             app:layout_column="2"
             app:layout_row="2" />
 
@@ -130,6 +150,8 @@
             android:id="@+id/button13"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/multiplication"
 
             android:layout_height="wrap_content"
             app:layout_column="3"
@@ -138,10 +160,12 @@
         <Button
             android:id="@+id/button14"
             style="@style/Widget.BasicCalculator.Button"
-
+            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/numFour"
 
-            android:layout_height="wrap_content"
+
             app:layout_column="0"
             app:layout_row="3" />
 
@@ -149,8 +173,9 @@
             android:id="@+id/button15"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/numFive"
 
-            android:layout_height="wrap_content"
             app:layout_column="1"
             app:layout_row="3" />
 
@@ -158,8 +183,9 @@
             android:id="@+id/button16"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/numSix"
 
-            android:layout_height="wrap_content"
             app:layout_column="2"
             app:layout_row="3" />
 
@@ -167,18 +193,22 @@
             android:id="@+id/button17"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/minus"
 
-            android:layout_height="wrap_content"
             app:layout_column="3"
             app:layout_row="3" />
 
         <Button
             android:id="@+id/button18"
             style="@style/Widget.BasicCalculator.Button"
+            android:layout_marginStart="10dp"
+            app:layout_rowWeight="1"
+            android:text="@string/numOne"
+
 
             android:layout_width="wrap_content"
 
-            android:layout_height="wrap_content"
             app:layout_column="0"
             app:layout_row="4" />
 
@@ -186,8 +216,10 @@
             android:id="@+id/button19"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/numTwo"
 
-            android:layout_height="wrap_content"
+
             app:layout_column="1"
             app:layout_row="4" />
 
@@ -195,8 +227,9 @@
             android:id="@+id/button20"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/numThree"
 
-            android:layout_height="wrap_content"
             app:layout_column="2"
             app:layout_row="4" />
 
@@ -204,18 +237,23 @@
             android:id="@+id/button21"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
-
-            android:layout_height="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/plus"
             app:layout_column="3"
             app:layout_row="4" />
 
         <Button
             android:id="@+id/button22"
             style="@style/Widget.BasicCalculator.Button"
-
             android:layout_width="186dp"
 
+            app:layout_rowWeight="1"
+            android:text="@string/numZero"
+
+
             android:layout_height="wrap_content"
+
+            android:layout_marginStart="10dp"
             app:layout_column="0"
             app:layout_columnSpan="2"
             app:layout_row="5" />
@@ -224,8 +262,9 @@
             android:id="@+id/button24"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/dot"
 
-            android:layout_height="wrap_content"
             app:layout_column="2"
             app:layout_row="5" />
 
@@ -233,8 +272,10 @@
             android:id="@+id/button25"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
+            app:layout_rowWeight="1"
+            android:text="@string/equal"
 
-            android:layout_height="wrap_content"
+
             app:layout_column="3"
             app:layout_row="5" />
 
