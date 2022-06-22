@@ -11,25 +11,27 @@
         android:id="@+id/result_value"
 
         android:layout_width="match_parent"
-        android:layout_height="89dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="96dp"
         android:layout_marginEnd="10dp"
 
-        android:backgroundTint="@color/white"
+        android:backgroundTint="@color/black"
         android:ems="15"
-        android:inputType="numberDecimal"
 
+        android:hint="@string/hint"
         android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+
+        android:maxLines="4"
         android:textAlignment="textEnd"
-        android:textColor="@color/dark_grey"
-
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
         android:textSize="34sp"
-
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:hint="@string/hint" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <androidx.gridlayout.widget.GridLayout
         android:id="@+id/gridLayout"
@@ -54,10 +56,11 @@
         <Button
             android:id="@+id/delete_btn"
             style="@style/Widget.BasicCalculator.Button"
-            android:text="@string/delete"
-
             android:layout_width="182dp"
+
             android:layout_marginTop="7dp"
+            android:text="@string/delete"
+            app:backgroundTint="#262A3E"
             app:layout_column="2"
             app:layout_columnSpan="2"
             app:layout_row="0"
@@ -66,16 +69,16 @@
         <Button
             android:id="@+id/clear_btn"
             style="@style/Widget.BasicCalculator.Button"
-            android:layout_marginStart="10dp"
             android:layout_width="wrap_content"
+            android:layout_marginStart="10dp"
             android:text="@string/clear"
             android:textSize="25sp"
 
 
-            app:backgroundTint="@color/purple_700"
-            app:layout_rowWeight="1"
+            app:backgroundTint="@color/red_700"
             app:layout_column="0"
-            app:layout_row="1" />
+            app:layout_row="1"
+            app:layout_rowWeight="1" />
 
 
         <Button
@@ -107,6 +110,7 @@
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
             android:text="@string/division"
+            app:backgroundTint="#0A2063"
 
 
             app:layout_column="3"
@@ -152,6 +156,7 @@
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
             android:text="@string/multiplication"
+            app:backgroundTint="#0A2063"
 
             app:layout_column="3"
             app:layout_row="2" />
@@ -194,6 +199,7 @@
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
             android:text="@string/minus"
+            app:backgroundTint="#0A2063"
 
             app:layout_column="3"
             app:layout_row="3" />
@@ -237,6 +243,8 @@
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
             app:layout_rowWeight="1"
+            app:backgroundTint="#0A2063"
+
             android:text="@string/plus"
             app:layout_column="3"
             app:layout_row="4" />
@@ -271,13 +279,22 @@
             android:id="@+id/calculate_btn"
             style="@style/Widget.BasicCalculator.Button"
             android:layout_width="wrap_content"
-            app:layout_rowWeight="1"
             android:text="@string/equal"
+            app:backgroundTint="#125E13"
 
 
             app:layout_column="3"
-            app:layout_row="5" />
+            app:layout_row="5"
+            app:layout_rowWeight="1" />
 
     </androidx.gridlayout.widget.GridLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="135dp"
+        android:layout_height="46dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="261dp"
+        tools:layout_editor_absoluteY="39dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

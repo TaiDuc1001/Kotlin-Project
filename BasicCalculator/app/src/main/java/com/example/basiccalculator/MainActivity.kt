@@ -3,7 +3,9 @@ package com.example.basiccalculator
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.GridLayout
 import com.example.basiccalculator.databinding.ActivityMainBinding
+import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
 
@@ -14,13 +16,14 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        binding.plusBtn.setOnClickListener { calFunc() }
+
+        binding.plusBtn.setOnClickListener { plusFunc() }
 //        binding.minusBtn.setOnClickListener { calFunc() }
 //        binding.multiplicationBtn.setOnClickListener { calFunc() }
 //        binding.divisionBtn.setOnClickListener { calFunc() }
 //        binding.openParenthesesBtn.setOnClickListener { calFunc() }
 //        binding.closeParenthesesBtn.setOnClickListener { calFunc() }
-//        binding.calculateBtn.setOnClickListener { calFunc() }
+        binding.calculateBtn.setOnClickListener { calFunc() }
         binding.clearBtn?.setOnClickListener { clearFunc() }
         binding.deleteBtn.setOnClickListener { clearFunc() }
         binding.numOneBtn?.setOnClickListener { numOneFunc() }
@@ -35,8 +38,17 @@ class MainActivity : AppCompatActivity() {
         binding.numZeroBtn?.setOnClickListener { numZeroFunc() }
     }
 
+    private fun plusFunc() {
+        val resultField = binding.resultValue.text.toString()
+        binding.resultValue.setText(resultField + "+")
+    }
+
     @SuppressLint("SetTextI18n")
     private fun numZeroFunc() {
+        val lines = binding.resultValue.maxLines
+        if (lines >= 4){
+            Snackbar.make(findViewById(R.id.gridLayout), "Stop! It's long enough!!", Snackbar.LENGTH_LONG ).show()
+        }
         val resultField = binding.resultValue.text.toString()
         binding.resultValue.setText(resultField + "0")
     }
@@ -100,6 +112,11 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calFunc() {
-        TODO("Not yet implemented")
+        val resultField = binding.resultValue.text.toString()
+        val numbers = resultField.split("+")
+        val value_one = numbers[0].toDouble()
+        val value_two = numbers[1].toDouble()
+        val result = (value_one + value_two).toString()
+        binding.resultValue.setText(resultField + " = " + result)
     }
 }
