@@ -97,10 +97,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
+<<<<<<< HEAD
             android:layout_marginStart="8dp"
             android:layout_marginTop="16dp"
             android:layout_marginEnd="8dp"
             android:layout_marginBottom="8dp"
+=======
+            android:layout_marginStart="20dp"
+>>>>>>> 0fe91884809126043afa9d3c0023584afe35cfb0
 
             android:textAppearance="?attr/textAppearanceBody1"
 
