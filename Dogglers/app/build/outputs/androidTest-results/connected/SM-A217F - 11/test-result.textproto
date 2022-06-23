@@ -1,0 +1,224 @@
+# 2022-06-23T10:47:48.338Z:
+test_suite_meta_data {
+  scheduled_test_case_count: 4
+}
+test_status: PASSED
+test_result {
+  test_case {
+    test_class: "HorizontalListTests"
+    test_package: "com.example.dogglers"
+    test_method: "recycler_view_item_count"
+    start_time {
+      seconds: 1655981260
+      nanos: 593000000
+    }
+    end_time {
+      seconds: 1655981262
+      nanos: 473000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\logcat-com.example.dogglers.HorizontalListTests-recycler_view_item_count.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "HorizontalListTests"
+    test_package: "com.example.dogglers"
+    test_method: "horizontal_scrolling"
+    start_time {
+      seconds: 1655981262
+      nanos: 870000000
+    }
+    end_time {
+      seconds: 1655981264
+      nanos: 230000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\logcat-com.example.dogglers.HorizontalListTests-horizontal_scrolling.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "HorizontalListTests"
+    test_package: "com.example.dogglers"
+    test_method: "horizontal_scroll_content_at_last_position"
+    start_time {
+      seconds: 1655981264
+      nanos: 694000000
+    }
+    end_time {
+      seconds: 1655981265
+      nanos: 700000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\logcat-com.example.dogglers.HorizontalListTests-horizontal_scroll_content_at_last_position.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\cpuinfo"
+    }
+  }
+}
+test_result {
+  test_case {
+    test_class: "HorizontalListTests"
+    test_package: "com.example.dogglers"
+    test_method: "horizontal_scroll_content_at_first_position"
+    start_time {
+      seconds: 1655981266
+      nanos: 121000000
+    }
+    end_time {
+      seconds: 1655981267
+      nanos: 140000000
+    }
+  }
+  test_status: PASSED
+  output_artifact {
+    label {
+      label: "logcat"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\logcat-com.example.dogglers.HorizontalListTests-horizontal_scroll_content_at_first_position.txt"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\device-info.pb"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.meminfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\meminfo"
+    }
+  }
+  output_artifact {
+    label {
+      label: "device-info.cpuinfo"
+      namespace: "android"
+    }
+    source_path {
+      path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\cpuinfo"
+    }
+  }
+}
+output_artifact {
+  label {
+    label: "test-results.log"
+    namespace: "com.google.testing.platform.runtime.android.driver.AndroidInstrumentationDriver"
+  }
+  source_path {
+    path: "C:\\Users\\DUC\\AndroidStudioProjects\\Dogglers\\app\\build\\outputs\\androidTest-results\\connected\\SM-A217F - 11\\testlog\\test-results.log"
+  }
+  type: TEST_DATA
+  mime_type: "text/plain"
+}

@@ -52,10 +52,10 @@ class DogCardAdapter(
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DogCardViewHolder {
         val adapterLayout: View
-        when(viewType) {
+        when(layout) {
             Layout.GRID -> {
                  adapterLayout = LayoutInflater.from(parent.context)
-                    .inflate(R.layout.activity_grid_list, parent, false)
+                    .inflate(R.layout.grid_list_item, parent, false)
             }
             else -> {
                  adapterLayout = LayoutInflater.from(parent.context)
@@ -93,8 +93,8 @@ class DogCardAdapter(
 
         val resources = context.resources
 
-        holder.textViewHobbies.text = resources.getString(R.string.dog_hobbies,item.hobbies )
-        holder.textViewAge.text = resources.getString(R.string.dog_age,item.age )
+        holder.textViewHobbies.text = item.hobbies
+        holder.textViewAge.text = item.age
 
         // TODO: Set the text for the current dog's hobbies by passing the hobbies to the
         //  R.string.dog_hobbies string constant.
