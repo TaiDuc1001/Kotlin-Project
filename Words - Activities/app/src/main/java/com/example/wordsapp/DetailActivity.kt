@@ -36,15 +36,10 @@ class DetailActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Retrieve a binding object that allows you to refer to views by id name
-        // Names are converted from snake case to camel case.
-        // For example, a View with the id word_one is referenced as binding.wordOne
         val binding = ActivityDetailBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Retrieve the LETTER from the Intent extras
-        // intent.extras.getString returns String? (String or null)
-        // so toString() guarantees that the value will be a String
+
         val letterId = intent?.extras?.getString(LETTER).toString()
 
         val recyclerView = binding.recyclerView
