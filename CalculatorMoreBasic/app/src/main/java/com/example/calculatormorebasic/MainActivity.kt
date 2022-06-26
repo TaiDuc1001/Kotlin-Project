@@ -7,6 +7,7 @@ import com.example.calculatormorebasic.databinding.ActivityMainBinding
 import android.view.KeyEvent
 import android.view.View
 import android.view.inputmethod.InputMethodManager
+import android.widget.TextView
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
@@ -30,15 +31,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun plusFunc() {
-        val numberInEditText1 = binding.editTextFirstNumber.text.toString()
-        val numberInEditText2 = binding.editTextSecondNumber.text.toString()
-        if (numberInEditText1.isNotEmpty() && numberInEditText2.isNotEmpty()) {
-            var result = (numberInEditText1.toDouble() + numberInEditText2.toDouble()).toString()
-            binding.resultOfEquation.setText(result)
-        }
-        else {
-            Snackbar.make(findViewById(R.id.linearLayout), "Enter valid numbers", Snackbar.LENGTH_LONG ).show()
-        }
+//        val numberInEditText1 = findViewById<TextView?>(R.id.editTextFirstNumber).text
+//        val numberInEditText2 = findViewById<TextView?>(R.id.editTextSecondNumber).text
+//        if (numberInEditText1.isNotEmpty() && numberInEditText2.isNotEmpty()) {
+//            var result = (numberInEditText1.toDouble() + numberInEditText2.toDouble()).toString()
+//            binding.resultOfEquation.setText(result)
+//        }
+//        else {
+//            Snackbar.make(findViewById(R.id.linearLayout), "Enter valid numbers", Snackbar.LENGTH_LONG ).show()
+//        }
     }
 
     private fun minusFunc() {
