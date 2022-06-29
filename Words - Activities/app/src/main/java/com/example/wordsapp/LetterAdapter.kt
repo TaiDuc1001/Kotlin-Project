@@ -23,7 +23,6 @@ import android.view.ViewGroup
 import android.view.accessibility.AccessibilityNodeInfo
 import android.widget.Button
 import androidx.annotation.RequiresApi
-import androidx.navigation.findNavController
 import androidx.recyclerview.widget.RecyclerView
 
 
@@ -69,8 +68,15 @@ class LetterAdapter :
 
         // Assigns a [OnClickListener] to the button contained in the [ViewHolder]
         holder.button.setOnClickListener {
-            val action = LetterListFragmentDirections.actionLetterListFragmentToWordListFragment(letter = holder.button.text.toString())
-            holder.view.findNavController().navigate(action)
+            val context = holder.view.context
+            // Create an intent with a destination of DetailActivity
+            val intent = Intent(context, DetailActivity::class.java)
+            // Add the selected letter to the intent as extra data
+            // The text of Buttons are [CharSequence], a list of characters,
+            // so it must be explicitly converted into a [String].
+            intent.putExtra(WordListFragment.LETTER, holder.button.text.toString())
+            // Start an activity using the data and destination from the Intent.
+            context.startActivity(intent)
         }
     }
 
@@ -78,7 +84,10 @@ class LetterAdapter :
     // an accessibility service
     companion object Accessibility : View.AccessibilityDelegate() {
         @RequiresApi(Build.VERSION_CODES.LOLLIPOP)
-        override fun onInitializeAccessibilityNodeInfo(host: View, info: AccessibilityNodeInfo) {
+        override fun onInitializeAccessibilityNodeInfo(
+            host: View?,
+            info: AccessibilityNodeInfo?
+        ) {
             super.onInitializeAccessibilityNodeInfo(host, info)
             // With `null` as the second argument to [AccessibilityAction], the
             // accessibility service announces "double tap to activate".
@@ -90,7 +99,7 @@ class LetterAdapter :
                     AccessibilityNodeInfo.ACTION_CLICK,
                     customString
                 )
-            info.addAction(customClick)
+            info?.addAction(customClick)
         }
     }
 }
