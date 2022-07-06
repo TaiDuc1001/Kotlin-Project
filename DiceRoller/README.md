@@ -22,3 +22,8 @@ Getting Started
 ---------------
 
 1. Download and run the app.
+
+Screenshot
+---------------
+![image](https://user-images.githubusercontent.com/89329066/177508049-5bb1b73a-25cb-4835-8ed9-6bf6ca7d6add.png)
+![image](https://user-images.githubusercontent.com/89329066/177507932-ba6416af-045f-436e-b3e0-54d25e234e0d.png)
