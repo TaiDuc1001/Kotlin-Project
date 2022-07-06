@@ -20,3 +20,7 @@ Getting Started
 2. Download the sample.
 3. Import the sample into Android Studio.
 4. Build and run the sample.
+
+Screenshot
+---------------
+<img src="https://user-images.githubusercontent.com/89329066/177518138-9de3bd95-9f87-4f52-9f65-89102d852d71.png" height = "700" width = "315"/>
