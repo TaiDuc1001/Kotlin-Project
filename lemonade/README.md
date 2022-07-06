@@ -25,3 +25,16 @@ Tips
 
 - Use the provided tests to ensure your app is running as expected
 - DO NOT ALTER THE PROVIDED TESTS
+
+Screenshot
+---------------
+<div align=center>
+<img src="https://user-images.githubusercontent.com/89329066/177521123-4fd48357-d157-4ef0-a278-26c6b853e44d.png" height = "500" width = "225"/> 
+<img src="https://user-images.githubusercontent.com/89329066/177521137-b6eef4cf-5efe-41e5-ab5f-6e2fa3e73ee7.png" height = "500" width = "225"/> 
+<img src="https://user-images.githubusercontent.com/89329066/177521151-1ed80fcf-cfaf-41bc-8c69-4b4692e53530.png" height = "500" width = "225"/> 
+<img src="https://user-images.githubusercontent.com/89329066/177521179-32912217-3acd-40e4-98e0-1cb34ef4a9de.png" height = "500" width = "225"/> 
+</div>
+
+
+
+
